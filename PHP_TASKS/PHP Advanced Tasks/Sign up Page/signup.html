@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="signup.php" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" pattern="\d{14}" required><br>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="mname">Middle Name:</label>
+        <input type="text" id="mname" name="mname"><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="familyname">Family Name:</label>
+        <input type="text" id="familyname" name="familyname" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+
+        <label for="dob_day">Date of Birth (Day):</label>
+        <input type="number" id="dob_day" name="dob_day" min="1" max="31" required>
+        
+        <label for="dob_month">Month:</label>
+        <input type="number" id="dob_month" name="dob_month" min="1" max="12" required>
+        
+        <label for="dob_year">Year:</label>
+        <input type="number" id="dob_year" name="dob_year" min="1900" max="2023" required><br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
